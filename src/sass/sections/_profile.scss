@@ -1,0 +1,90 @@
+#profile {
+  max-width: 60vw;
+  height: 90vh;
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
+  z-index: 1;
+
+  .me {
+    height: 100%;
+  }
+}
+
+#header {
+  position: absolute;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  .copyright {
+    position: absolute;
+    font-size: 1.7em;
+    font-weight: 600;
+    left: 3%;
+    top: 5vh;
+    text-decoration: none;
+    width:7.1em;
+    overflow:hidden;
+    white-space: nowrap;
+    a {
+      color: #272341;
+      .codeby {
+        display: inline-block;
+        white-space: nowrap;
+        position: relative;
+        left: 0;
+        transition: transform 0.5s ease-in-out;
+    }
+    .Xie{
+      display: inline-block;
+      white-space: nowrap;
+      position: relative;
+      // transform: translateX(0);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}
+.copyright:hover .codeby {
+  transform: translateX(-180%); /* 向左移出容器 */
+}
+.copyright:hover .Xie {
+  transform: translateX(-80%); /* 向左移出容器 */
+}
+
+  
+
+  .codeby {
+            display: inline-block;
+            white-space: nowrap;
+            position: relative;
+            left: 0;
+            transition: transform 0.5s ease-in-out;
+        }
+
+  .header-tab {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 5vh;
+    // width:30%;
+    font-size: 2em;
+    justify-content: space-around;
+
+    .headertab {
+      cursor: pointer;
+      padding: 0px 20px;
+    }
+
+  }
+}
+
+#projectTitle{
+  padding:20vh 0px 5vh;
+  text-align:left;
+  text-indent:2em;
+  font-size: $big-font-size;
+  font-family: "Montserrat", sans-serif;
+
+}

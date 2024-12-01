@@ -1,0 +1,214 @@
+#display {
+  width:100%;
+  overflow:hidden;
+  .gallery-wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 120vw;
+    height:calc((30 / 16 * 9) * 1vw);;
+    position: relative;
+  }
+/* 当鼠标悬停在 .gallery-wrapper 上时，应用样式 */
+.gallery-wrapper:hover {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+}
+@keyframes slideRight {
+  0% {
+    left: -15vw;
+  }
+  25% {
+    left: -20vw;
+  }
+  75%{
+    left:0vw;
+  }
+  100%{
+    left:-15vw;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    left: -10vw;
+  }
+  25% {
+    left: -20vw;
+  }
+  75%{
+    left:0vw;
+  }
+  100%{
+    left:-10vw;
+  }
+}
+
+/* 当鼠标悬停在 .gallery-wrapper 上时，应用于其中的 .gallery 元素 */
+.gallery-wrapper:hover .gallery {
+  box-shadow: 0 0 20px grey, 
+  0 0 40px grey;
+  // padding-bottom: 2px;
+}
+
+.gmoving-right{
+  left:-15vw;
+}
+.gmoving-right:hover{
+  left:-15vw;
+  animation: slideRight 10s ease-in-out forwards;
+  position: relative;
+}
+.gmoving-left{
+  left:-10vw
+}
+.gmoving-left:hover{
+  left:-10vw;
+  animation: slideLeft 10s ease-in-out forwards;
+  position: relative;
+  }
+.gmoving-top{
+  left:-10vw
+}
+.gmoving-top:hover{
+  left:-10vw;
+  animation: slideLeft 10s ease-in-out forwards;
+  position: relative;
+  }
+  div.gallery {
+    margin: 5px;
+    // border: 1px solid #ccc;
+    // float: left;
+    width: 30vw;
+    height:auto;
+    video{
+      width: 100%;
+    height: auto;
+    }
+  }
+  
+  div.gallery:hover {
+    // border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+//   @include respond(phone) {
+//     padding: 0rem $default-font-size;
+//   }
+
+//   .hero-title {
+//     position: relative;
+//     font-size: 10rem;
+//     font-weight: 900;
+//     margin-bottom: 3.2rem;
+//     text-align: left;
+//     z-index:99;
+//     @include respond(tab-land) {
+//       font-size: 4rem;
+//     }
+//     @include respond(tab-port) {
+//       font-size: 3.6rem;
+//       // text-align: center;
+//     }
+//     @include respond(phone) {
+//       font-size: 3.5rem;
+//       line-height: 1.5;
+//     }
+//     @include respond(phone-xs) {
+//       font-size: 2.8rem;
+//     }
+//   }
+//   .hero-avocado{
+//     height:12rem;
+//     padding-bottom: 2rem;
+//     // padding-left:2rem;
+//     transform:rotate(-10deg);
+//     @include respond(tab-land) {
+//       height: 4rem;
+//       padding-bottom: 0.5rem;
+//     }
+//     @include respond(tab-port) {
+//       height: 3.6rem;
+//       padding-bottom: 0.5rem;
+//       // text-align: center;
+//     }
+//     @include respond(phone) {
+//       height: 3.5rem;
+//       // line-height: 1.5;
+//     }
+//     @include respond(phone-xs) {
+//       height: 2.8rem;
+//       padding-bottom: 0rem;
+//     }
+//     &:hover{
+//       animation: load 2s linear infinite;
+//     }
+//     @keyframes load {
+//       0% {
+//         transform: rotate(-10deg);
+//       }
+//       100%
+//         {
+//           transform: rotate(350deg);
+//       }
+//     }
+//   }
+
+//   .hero-cta {
+//     display: flex;
+
+//     @include respond(tab-port) {
+//       justify-content: center;
+//     }
+
+//     & a {
+//       font-size: 2.4rem;
+
+//       @include respond(phone) {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+//   .signature{
+//     position:absolute;
+//     left:30em;
+//     bottom:10em;
+//     width:20em;
+//   }
+
+//   #video-container {
+//     width: 30px;
+//     height: 30px;
+//     position: relative;
+// }
+
+// #background-image {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+// }
+
+// #video {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 2;
+// }
+
+
+
+}
+

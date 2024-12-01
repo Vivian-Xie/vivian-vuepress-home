@@ -49,7 +49,7 @@
   transform: translateX(-180%); /* 向左移出容器 */
 }
 .copyright:hover .Xie {
-  transform: translateX(-80%); /* 向左移出容器 */
+  transform: translateX(-68%); /* 向左移出容器 */
 }
 
   
@@ -63,6 +63,7 @@
         }
 
   .header-tab {
+    font-family: 'Open Sans', Arial, sans-serif;
     z-index: 2;
     display: flex;
     position: absolute;
@@ -75,6 +76,11 @@
     .headertab {
       cursor: pointer;
       padding: 0px 20px;
+      text-decoration: none;
+      color: rgb(33, 37, 41);
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
     }
 
   }
